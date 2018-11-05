@@ -1,0 +1,35 @@
+{
+  "name": "mysql-sync",
+  "version": "1.0.0",
+  "description": "Syncs MySQL tables via MQTT",
+  "repository": "git@gitlab.com:maximilianschelbach/mysql-sync.git",
+  "main": "dist/application.js",
+  "author": "Maximilian Schelbach <maximilian@schelbach.de>",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "<= 10.11.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc",
+    "lint": "tslint -p . src/**/*.ts types/*.ts",
+    "build": "npm run clean && npm run lint && npm run compile"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.5",
+    "@types/stack-trace": "0.0.29",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "jsonschema": "^1.2.4",
+    "mkdir-recursive": "^0.4.0",
+    "mqtt": "^2.18.8",
+    "mysql": "^2.16.0",
+    "sqlstring": "^2.3.1",
+    "stack-trace": "0.0.10",
+    "to-camel-case": "^1.0.0"
+  }
+}

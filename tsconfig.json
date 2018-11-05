@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es2016"
+    ],
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "removeComments": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "alwaysStrict": false,
+    "noImplicitUseStrict": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "types/*.ts"
+  ]
+}
